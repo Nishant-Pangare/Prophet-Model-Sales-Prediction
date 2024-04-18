@@ -9,7 +9,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the pre-trained Prophet model
-model = joblib.load('Salon Data Prophet Sales Prediction\Prophet_model.pkl')
+model = joblib.load('/app/Prophet_model.pkl')
 
 # Define endpoint for making predictions
 @app.route('/predict_sales', methods=['POST'])
