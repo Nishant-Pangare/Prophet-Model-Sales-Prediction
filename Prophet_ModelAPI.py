@@ -16,7 +16,7 @@ model = Prophet(
 )
 
 # Define endpoint for making predictions
-@app.route('/predict_sales', methods=['POST'])
+@app.route('/predict_sales', methods=['POST','GET'])
 def predict_sales():
     # Load data file from request
     data = request.files['data']
